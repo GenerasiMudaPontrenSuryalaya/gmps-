@@ -1,0 +1,111 @@
+/* General Styles */
+body {body, html {
+    margin: 0;
+    padding: 0;
+    width: 99%;
+    height: 99%;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: rgb(215, 215, 215);
+    text-align: center;
+    padding: 15px;
+}
+}
+.header {
+    position: relative;
+    height: -90px; /* Sesuaikan tinggi header jika diperlukan */
+}
+.logo-left {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100px; /* Sesuaikan lebar logo */
+    height: auto; /* Menjaga rasio aspek */
+}
+.logo-right {
+    position: absolute;
+    top:29px;
+    right: 30px;
+    width: 112px; /* Sesuaikan lebar logo */
+    height: auto; /* Menjaga rasio aspek */
+}
+header {
+    background-color: rgba(0, 0,0, 0.8);
+    color: #ffffff;
+    padding: 29px 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 200px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+main {
+    color: #d6d6d6e7; /* Warna teks konten utama */
+}
+.box {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    background-color: lightblue;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.text-center {
+    text-align: center;
+}
