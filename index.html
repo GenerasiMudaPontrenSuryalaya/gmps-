@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generasi Muda Pesantren Suryalaya (GMPS) - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .text-center {
+            text-align: center;
+        }
+        /* Tambahan CSS dari file styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            position: relative;
+            height: 150px; /* Sesuaikan tinggi header jika diperlukan */
+            background-color: #333;
+            color: #fff;
+        }
+
+        .logo-left {
+            position: absolute;
+            top: 27px;
+            left: 25px; /* Menempatkan logo di pojok kiri atas */
+            width: 110px; /* Sesuaikan lebar logo */
+            height: auto; /* Menjaga rasio aspek */
+        }
+
+        .logo-right {
+            position: absolute;
+            top: 27px;
+            right: 25px; /* Menempatkan logo di pojok kanan atas */
+            width: 112px; /* Sesuaikan lebar logo */
+            height: auto; /* Menjaga rasio aspek */
+        }
+
+        nav {
+            text-align: center; /* Menyelaraskan menu navigasi ke tengah */
+            padding-top: 10px; /* Tambahkan sedikit jarak dari atas */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body onload="loadNews()">
+    <video autoplay muted loop class="video-background">
+        <source src="Vi.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video tag.
+    </video>
+    <header class="header">
+        <h1>GENERASI MUDA PONTREN SURYALAYA</h1>
+        <h2>Alamat:</h2>
+        <img src="path/to/logo2.png" alt="logo2" class="logo-left">
+        <img src="path/to/logo1.png" alt="Logo1" class="logo-right">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">Struktur Organisasi</a></li>               
+                <li><a href="programs.html">Program dan Kegiatan</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="about-contact.html">Tentang Kami dan Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="row">
+        <div class="column text-center" id="column1">
+            <h2>Highlight berita</h2>
+            <div id="newsContainer1"></div>
+        </div>
+        <div class="column text-center" id="column2">
+            <h2>Highlight berita</h2>
+            <div id="newsContainer2"></div>
+        </div>
+        <div class="column text-center" id="column3">
+            <h2>Highlight berita</h2>
+            <div id="newsContainer3"></div>
+        </div>
+    </section>
+
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di GMPS</h2>
+            <img src="banner.jpg" alt="Gambar Relawan dengan Slogan GMPS">
+            <h3>Highlight Kegiatan Terbaru</h3>
+            <img src="Kegiatan Baru.jpeg" alt="Deskripsi gambar" width="320" height="240">
+            <p>Deskripsi singkat dari kegiatan terakhir yang dilakukan.</p>
+            <h2>Video in YouTube</h2>
+            <a href="https://www.youtube.com/watch?v=2wZ4c4HUNV0" target="_blank">
+                <video width="320" height="240" controls autoplay>
+                    <source src="videoplayback (2).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+        <style>
+            .button {
+                background-color: #4CAF50; /* Warna latar belakang tombol */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+        <h2>Bergabung Menjadi Anggota GMPS</h2>
+        <h3>Klik link di bawah untuk daftar</h3>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSej2VrIjRsi8j5b-cwlF5Rak_abPsm1BPiQJmbdPa6mE3ieVw/viewform?usp=header" class="button">Gabung</a>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Generasi Muda Pontren Suryalaya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
